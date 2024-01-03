@@ -19,9 +19,7 @@ Pod::Spec.new do |s|
     s.requires_arc = true
     s.static_framework = true
     s.default_subspec = 'Core'
-    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-
+   
     s.subspec 'Core' do |core|
         core.source_files = 'ZFPlayer/Classes/Core/**/*'
         core.public_header_files = 'ZFPlayer/Classes/Core/**/*.h'
